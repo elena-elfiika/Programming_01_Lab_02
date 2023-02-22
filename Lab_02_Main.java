@@ -13,6 +13,7 @@ public class Lab_02_Main{
 		print_mat(arr);
 		print_mat(ed_arr(arr));
 	}
+
    // заполнение массива случайными числами
 	static int[][] fill_arr(int arr[][], int m, int n){
       // Заполняем массив данными
@@ -25,6 +26,7 @@ public class Lab_02_Main{
 		
 		return arr;
 	}
+
    // вывод матрицы
 	static void print_mat(int a[][]){ 
 		// из массива строки
@@ -37,6 +39,7 @@ public class Lab_02_Main{
 		}
 		System.out.println();
 	}
+
    // нахождение максимального элемента матрицы
 	static int find_max(int a[][], int id){
       // максимальный элемент в столбце по умолчанию
@@ -49,6 +52,7 @@ public class Lab_02_Main{
 		}
 		return max;
 	}
+
    // нахождение индекса
 	static int[][] ed_arr(int a[][]){
 		int tmp;
@@ -63,6 +67,7 @@ public class Lab_02_Main{
 		}
 		return copy_cut(a,cut_pos);
 	}
+	
    // создание нового массива с удалением столбца
 	static int[][] copy_cut(int a[][], int cut_pos){ 
 		int m = a.length;
